@@ -5,6 +5,7 @@
     <Grid>
         <!-- definiujemy ile jest wierszy i kolumn -->
         <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
             <!-- zdecydowaliśmy się na 5 wierszy -->
             <!-- auto oznacza tyle ile musisz zeby zmieścić zawartość -->
             <RowDefinition Height="Auto" />
@@ -35,6 +36,13 @@
         <!-- UWAGA: zamiast horizontalstacklayout możemy użyć grid -->
         <Button Grid.Row="4" Grid.Column="0" Text="Pokaż" Clicked="PokazClicked"/>
         <Button Grid.Row="4" Grid.Column="1" Text="Ukryj"/>
+        <FlexLayout Grid.Row="5" Grid.Column="0" Grid.ColumnSpan="2" Wrap="Wrap" JustifyContent="Center">
+            <Button Text="Procesory" />
+            <Button Text="Płyty główne" />
+            <Button Text="Karty Graficzne" />
+            <Button Text="Dyski SSD" />
+            <Button Text="Pamieci RAM" />
+            
     </Grid>
 
 
