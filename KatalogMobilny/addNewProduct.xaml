@@ -8,5 +8,26 @@
             Text="Welcome to .NET MAUI!"
             VerticalOptions="Center" 
             HorizontalOptions="Center" />
+        <Label Text="Nazwa" />
+        <Entry x:Name="NazwaEntry" Placeholder="Wpisz nazwę produktu" />
+        <Label Text="Cena" />
+        <Entry x:Name="CenaEntry" Placeholder="Wpisz cenę produktu" Keyboard="Numeric" />
+        <Label Text="kategoria"/>
+        <Picker x:Name="KategoriaPicker">
+            <Picker.ItemsSource>
+                <x:Array Type="{x:Type x:String}">
+                    <x:String>Procesory</x:String>
+                    <x:String>Płyty główne</x:String>
+                    <x:String>Karty graficzne</x:String>
+                    <x:String>Dyski SSD</x:String>
+                    <x:String>Pamięci RAM</x:String>
+                </x:Array>
+            </Picker.ItemsSource>
+            <horizontalStackLayout>
+                <switch x:Name="availableSwitch" />
+                <label text="produkt dostępny" verticaloptions="Center" />
+                
+            </horizontalStackLayout>
+            <RadioButtonGroup. text="dodaj produkt"/>
     </VerticalStackLayout>
 </ContentPage>
